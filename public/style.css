@@ -1,0 +1,135 @@
+body {
+    background-color: #292929;
+    margin: 0;
+    cursor: cell;
+    min-height: 100vh;
+}
+
+.app {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 90px;
+    height: 70px;
+    transform: rotate(0deg);
+    position: relative;
+    top: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+}
+
+.content input {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.content button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.verify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+}
+
+.verify input {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.verify button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.getList button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(160, 30, 30);
+    border: none;
+    color: #292929;
+    cursor: pointer;
+}
+
+.error {
+    color: rgb(160, 30, 30);
+    position: relative;
+    bottom: 30px;
+    font-size: larger;
+}
+
+.seeya {
+    color: rgb(160, 30, 30);
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 30px;
+}
+
+.resultsContainer {
+    width: 80%;
+    height: 500px;
+    background-color: darkgray;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.closer {
+    position: relative;
+    left: 47%;
+    cursor: pointer;
+}
+
+.mailingList {
+    color: rgb(160, 30, 30);
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.person p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
