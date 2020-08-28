@@ -133,3 +133,105 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 800px) {
+    .header img {
+        width: 140px;
+        height: 110px;
+        transform: rotate(0deg);
+        position: relative;
+        top: 10px;
+    }
+
+    .content input {
+        margin-bottom: 80px;
+        width: 400px;
+        height: 60px;
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .content button {
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .seeya {
+        color: rgb(160, 30, 30);
+        font-weight: bold;
+        font-size: 60px;
+        text-decoration: line-through;
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header img {
+        width: 150px;
+        height: 110px;
+        transform: rotate(0deg);
+        position: relative;
+        top: 10px;
+    }
+
+    .content input {
+        margin-bottom: 100px;
+        width: 380px;
+        height: 50px;
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+
+    .content button {
+        width: 300px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .seeya {
+        color: rgb(160, 30, 30);
+        font-weight: bold;
+        font-size: 60px;
+        text-decoration: line-through;
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header img {
+        width: 140px;
+        height: 100px;
+        transform: rotate(0deg);
+        position: relative;
+        top: 10px;
+    }
+
+    .content input {
+        margin-bottom: 100px;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+    }
+
+    .content button {
+        width: 200px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .seeya {
+        color: rgb(160, 30, 30);
+        font-weight: bold;
+        font-size: 60px;
+        text-decoration: line-through;
+        position: relative;
+        bottom: 30px;
+    }
+}
