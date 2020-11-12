@@ -134,6 +134,20 @@ body {
     margin-right: 10px;
 }
 
+.unsubscribe {
+    color: rgb(160, 30, 30);
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    left: 90%;
+    bottom: 91%;
+    cursor: pointer;
+}
+
+.unsubscribe:hover {
+    text-decoration: line-through;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 800px) {

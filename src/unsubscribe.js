@@ -1,41 +1,37 @@
 import React from "react";
 import { useStatefulFields } from "./useStatefulFields";
 import { useAuthSubmit } from "./useAuthSubmit";
-import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Unsubscribe() {
     const [values, handleChange] = useStatefulFields();
     const [thanks, isVisib, error, handleClick] = useAuthSubmit(
-        "/subscribe",
+        "/unsubscribe",
         values
     );
+
     return (
         <div className="app">
-            <Link to={"/unsubscribe"}>
-                <p className="unsubscribe">Unsubscribe</p>
-            </Link>
             {isVisib && (
                 <div className="header">
                     <img src="/images/logoAutonoma%20copy.png" />
                 </div>
             )}
-
             {isVisib && (
                 <div className="content">
                     {error && (
                         <p className="error">
-                            Something went wrong, please try again
+                            Looks like your email is not here
                         </p>
                     )}
                     <input
-                        name="email"
+                        name="mail"
                         placeholder="Email"
                         onChange={handleChange}
                     />
-                    <button onClick={handleClick}>Submit</button>
+                    <button onClick={handleClick}>Unsubscribe</button>
                 </div>
             )}
-            {thanks && <h2 className="seeya">See you soon</h2>}
+            {thanks && <h2 className="seeya">GoodBye</h2>}
         </div>
     );
 }

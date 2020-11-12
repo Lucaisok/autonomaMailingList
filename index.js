@@ -60,6 +60,39 @@ app.post("/subscribe", async function (req, res) {
     }
 });
 
+app.post("/unsubscribe", async function (req, res) {
+    try {
+        const data = await db.checkUser(req.body.mail);
+        console.log(data);
+        if (data.rows.length > 0) {
+            console.log("still here? ", req.body);
+            try {
+                const data = await db.unsubscribe(req.body.mail);
+                console.log("unsubscribe data ", data);
+                res.json({ success: true });
+                console.log("deleted");
+            } catch (err) {
+                console.log("error deleting", err);
+                res.json({ success: false });
+            }
+        } else {
+            res.json({ success: false });
+            console.log("no check");
+        }
+    } catch (err) {
+        console.log("error checking", err);
+        res.json({ success: false });
+    }
+    // try {
+    //     const data = await db.unsubscribe(req.body.mail);
+    //     console.log(data);
+    //     res.json({ success: true });
+    // } catch (err) {
+    //     console.log(err);
+    //     res.json({ success: false });
+    // }
+});
+
 app.post("/verify", function (req, res) {
     console.log(req.body);
     if (req.body.password === secret.adm) {

@@ -19,3 +19,22 @@ module.exports.getList = () => {
     SELECT * FROM subscribers
     `);
 };
+
+module.exports.checkUser = (email) => {
+    return db.query(
+        `
+    SELECT id, email FROM subscribers
+    WHERE email = $1
+    `,
+        [email]
+    );
+};
+
+module.exports.unsubscribe = (email) => {
+    return db.query(
+        `
+    DELETE FROM subscribers
+    WHERE email = $1`,
+        [email]
+    );
+};
