@@ -67,12 +67,10 @@ export default function Admin() {
                         X
                     </p>
                     <h3 className="mailingList">Mailing List</h3>
+                    <p className="total">[ Total: {users.length} ]</p>
                     {users.map((person, idx) => {
                         return (
                             <div key={idx} className="person">
-                                <p className="numero">
-                                    <strong>{person.id}</strong>
-                                </p>
                                 <p className="email">
                                     <strong>{person.email}</strong>
                                 </p>

@@ -11,9 +11,6 @@ export default function Home() {
     );
     return (
         <div className="app">
-            <Link to={"/unsubscribe"}>
-                <p className="unsubscribe">Unsubscribe</p>
-            </Link>
             {isVisib && (
                 <div className="header">
                     <img src="/images/logoAutonoma%20copy.png" />
@@ -36,6 +33,9 @@ export default function Home() {
                 </div>
             )}
             {thanks && <h2 className="seeya">See you soon</h2>}
+            <Link to={"/unsubscribe"}>
+                <p className="unsubscribe">Unsubscribe</p>
+            </Link>
         </div>
     );
 }

@@ -148,9 +148,15 @@ body {
     text-decoration: line-through;
 }
 
+.total {
+    color: #292929;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
     .header img {
         width: 140px;
         height: 110px;
@@ -181,6 +187,19 @@ body {
         text-decoration: line-through;
         position: relative;
         bottom: 30px;
+    }
+
+    .unsubscribe {
+        color: rgb(160, 30, 30);
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+        position: initial;
+        margin-top: 100px;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 
