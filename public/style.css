@@ -154,6 +154,30 @@ body {
     font-weight: bold;
 }
 
+.linkTreeContainer {
+    width: 100%;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.link {
+    color: rgb(160, 30, 30);
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    width: min-content;
+}
+
+.pLink {
+    width: fit-content;
+}
+
+.pLink:hover {
+    margin-left: 10px;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1100px) {
