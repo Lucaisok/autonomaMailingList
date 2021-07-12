@@ -7,6 +7,7 @@ export default function Links() {
                 <img src="/images/logoAutonoma%20copy.png" />
             </div>
             <div className="linkTreeContainer">
+                <a href="http://www.autonomaindustriale.com" target="_blank" className="link"><p className="pLink">Mailing List</p></a>
                 <a href="https://autonomaindustriale.bandcamp.com/" target="_blank" className="link"><p className="pLink">Bandcamp</p></a>
                 <a href="https://soundcloud.com/autonoma-industriale" target="_blank" className="link"><p className="pLink">Soundcloud</p></a>
                 <a href="https://soundcloud.com/autonoma-industriale/sets/mix-series" target="_blank" className="link"><p className="pLink">Mix Series</p></a>
