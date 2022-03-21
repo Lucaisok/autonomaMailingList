@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const compression = require("compression");
 const cookieSession = require("cookie-session");
 const csurf = require("csurf");
 const db = require("./db");
@@ -29,7 +28,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use(compression());
 
 if (process.env.NODE_ENV != "production") {
     app.use(
@@ -83,14 +81,6 @@ app.post("/unsubscribe", async function (req, res) {
         console.log("error checking", err);
         res.json({ success: false });
     }
-    // try {
-    //     const data = await db.unsubscribe(req.body.mail);
-    //     console.log(data);
-    //     res.json({ success: true });
-    // } catch (err) {
-    //     console.log(err);
-    //     res.json({ success: false });
-    // }
 });
 
 app.post("/verify", function (req, res) {
