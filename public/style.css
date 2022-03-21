@@ -209,6 +209,7 @@ body {
 .inline {
   cursor: pointer;
   text-decoration: underline;
+  text-decoration-color: rgb(160, 30, 30);
 }
 
 .ul {

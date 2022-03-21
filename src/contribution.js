@@ -10,7 +10,7 @@ export default function Contribution() {
             <div className="contributionInfo">
                 <h1 className='reserve'>Reserve your spot</h1>
                 <ol className='ol'>
-                <a className='inline' target="_blank"><li className='contributionInfo'>Click here</li></a>
+                <a className='inline' target="_blank" href='https://www.paypal.me/autonomatiket'><li className='contributionInfo'>Click here</li></a>
                     <li className='contributionInfo'>Select "Friends and family" payment option</li>
                     <li className='contributionInfo'>Send your contibution of 10 euro (per person)</li>
                     <li className='contributionInfo'>Attach a message with the following info (for every participant):</li>
